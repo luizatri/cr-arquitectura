@@ -39,7 +39,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav justify-content-end w-100">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./pages/proyectos.html">Proyectos</a>
+              <a class="nav-link" aria-current="page" href="./pages/proyectos.html">Proyectos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
@@ -78,9 +78,6 @@
 
         <div class="portada__elementos">
 
-          <!-- <img src="images/imgportada.jpg" alt="Imagen de portada con sillón verde" class="img-fluid card-img w-100"> -->
-
-          <!-- <div class="card-img-overlay portada__textos"> -->
           <div>
             <ul class="portada__textos">
               <li>ARQUITECTURA</li>
@@ -89,7 +86,6 @@
             </ul>
 
           </div>
-          <!-- </div> -->
 
         </div>
 
@@ -118,7 +114,7 @@
         <div class="bienvenidos__text col-12 col-lg-4">
 
           <div>
-            <h1 class="display-1">Bienvenidos al Grupo CR</h1>
+            <h1 class="display-1 animate__animated animate__fadeIn">Bienvenidos al Grupo CR</h1>
           </div>
 
           <div>
@@ -128,7 +124,7 @@
             </p>
           </div>
 
-          <a href="./pages/nosotros.html">Quiero saber más</a>
+          <a href="./pages/nosotros.html" class="botones">Quiero saber más</a>
 
         </div>
       </div>
@@ -259,21 +255,21 @@
       <div class="proyectos__imgs row justify-content-evenly">
 
 
-        <div class="proyecto1 col-12 col-lg-4">
+        <div class="proyecto1 col-12 col-lg-4 ">
           <div class="imgOverlay">
-            <h3>Proyecto 01</h3>
+            <h3>Depto en Palermo</h3>
           </div>
         </div>
 
         <div class="proyecto2 col-12 col-lg-4">
           <div class="imgOverlay">
-            <h3>Proyecto 02</h3>
+            <h3>Mar de las Pampas</h3>
           </div>
         </div>
 
         <div class="proyecto3 col-12 col-lg-4">
           <div class="imgOverlay">
-            <h3>Proyecto 03</h3>
+            <h3>Rosario</h3>
           </div>
         </div>
 
@@ -283,19 +279,19 @@
 
         <div class="proyecto4 col-12 col-lg-4">
           <div class="imgOverlay">
-            <h3>Proyecto 04</h3>
+            <h3>Santa Fe</h3>
           </div>
         </div>
 
         <div class="proyecto5 col-12 col-lg-4">
           <div class="imgOverlay">
-            <h3>Proyecto 05</h3>
+            <h3>Bariloche</h3>
           </div>
         </div>
 
         <div class="proyecto6 col-12 col-lg-4">
           <div class="imgOverlay">
-            <h3>Proyecto 06</h3>
+            <h3>Caballito</h3>
           </div>
         </div>
 
@@ -330,33 +326,30 @@
 
       <div class="row justify-content-evenly gx-20 clientes__card">
 
-        <div class="col-12 col-lg-4 card clientes_card01" style="width: 18rem;">
+        <div class="col-12 col-lg-4 card" style="width: 18rem;">
           <img src="./images/projetos/proyecto9.jpg" class="card-img-top" alt="Cliente 01">
           <div class="card-body">
-            <h5 class="card-title">Cliente 01</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Ana y Laura</h5>
+            <p class="card-text">Conoce la historia del PH refaccionado por estas hermanas.</p>
+            <a href="#" class="btn btn-primary">Quiero verlo</a>
           </div>
         </div>
 
-        <div class="card clientes_card01 col-12 col-lg-4" style="width: 18rem;">
+        <div class="card col-12 col-lg-4" style="width: 18rem;">
           <img src="./images/projetos/proyecto8.jpg" class="card-img-top" alt="Cliente 02">
           <div class="card-body">
-            <h5 class="card-title col-12 col-lg-4">Cliente 02</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title col-12 col-lg-4">Casa y Oficina</h5>
+            <p class="card-text">Un monoambiente que tambien es oficina. Conoce el studio de Claudia.</p>
+            <a href="#" class="btn btn-primary">Quiero verlo</a>
           </div>
         </div>
 
-        <div class="card clientes_card03" style="width: 18rem;">
+        <div class="card col-12 col-lg-4" style="width: 18rem;">
           <img src="./images/projetos/proyecto7.jpg" class="card-img-top" alt="Cliente 03">
           <div class="card-body">
-            <h5 class="card-title">Cliente 03</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Familia Rocco</h5>
+            <p class="card-text">Un tres ambientes con mucha luz y un proyecto que optimiza pequeños espacios para una grande familia</p>
+            <a href="#" class="btn btn-primary">Quiero verlo</a>
           </div>
         </div>
 
@@ -364,7 +357,26 @@
 
     </div>
 
-    <!-- fin clientes ------------------------------------------------------------------>
+    <!-- fin clientes --------------------------------------------->
+
+    <!---- INICIO NEWSLETTER ----->
+
+    <div class="row">
+
+      <form class="formulario__newsletter">
+
+        <div class="form-group row justify-content-center">
+          <label for="colFormLabel" class="col-sm-5 col-form-label">Suscríbete a nuestra newsletter:</label>
+          <div class="col-sm-5">
+            <input type="email" class="form-control" id="colFormLabel" placeholder="ingresa tu e-mail para recibirlo">
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+
+    <!---- FIN NEWSLETTER ----->
 
   </main>
 

@@ -3,6 +3,23 @@
 
 //ESTILOS
 
+.imgOverlay {
+    position: relative;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4)
+}
+
+/* newsletter--------------------*/
+
+.formulario__newsletter {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ebebeb;
+    text-align: right;
+    label {
+        font-weight: bolder;
+    }
+}
 
 /* footer -----------------------------------*/
 
@@ -137,9 +154,6 @@ INDEX
     padding-top: 8%;
 }
 
-.card-img-overlay {
-    height: 100px
-}
 
 /* SECCIÓN BIENVENIDOS--------------  */
 
@@ -169,16 +183,6 @@ INDEX
 .bienvenidos__text {
 
     padding-bottom: 30px;
-
-        a {
-        padding: 9px 20px;
-        background-color: $color-amarillo;
-        border: none;
-        border-radius: 1px;
-        cursor: pointer;
-        text-decoration: none;
-        color: $color-gris;
-    }
 }
 
 
@@ -470,176 +474,123 @@ PÁGINA PROYECTOS
 /* imagen header proyectos--------------- */
 
 
-.gridProyectos01 {
-    display: grid;
-    grid-template-areas: "img img"
-                         "tex1 img1"
-                         "img2 tex2"
-                         "tex3 img3"
-                         "img4 tex4";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 510px 500px 500px 500px 500px;
-    height: 2550px;
 
-}
+.portadaproyectos__elementos {
 
-.contenidoImgProj {
-    grid-area: img;
     background-image: url("../images/proyectos_img-destacada.jpg");
-    height: 500px;
-    width: 100%;
     background-size: cover;
-}
-
-.imgOverlay {
-    position: relative;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3)
-}
-
-.textProj {
-    position: relative;
-    top: 50%;
-    text-align: center;
-    font-family: 'Zen Tokyo Zoo';
-    color: #ffffff;
-    margin-left: 150px;
-    font-size: 4rem;
-}
-
-
-$projetos: ( 
-        Proyecto1: $color-turquesamedio,
-        Proyecto2: $color-amarillo,
-        Proyecto3: $color-turquesaoscuro,
-        Proyecto4: $color-mostaza
-); 
-
-@each $proyecto, $color in $projetos {
-   .texto#{$proyecto} {
-       background-color: $color;
-   }
-}
-
-
-
-.textoProyecto1 {
-    grid-area: tex1;
-    // background-color: #B3D6C6;
-    padding-top: 250px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 390px;
     width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    
+        h1 {
+        font-family: $font-portada;
+        color: $color-blanco;
+        font-size: 8vh;
+        list-style: none;
+        text-align: center;
+        padding-top: 200px;
+        }
+
+
+ }
+
+ .pagproyectos__textoinicio {
+     text-align: center;
+     margin-top: 30px;
+
+ }
+
+ .pagproyectos__proyectos {
+     div {
+        padding-left: 0px;
+        padding-right: 0px;
+     }
+ }
+
+ .pagproyectos__textos1 {
+
+    background-color: $color-offwhite;
+    
+    h2 {
+        color: #5c5b5b;
+        font-weight: bolder;
+        font-size: 8vh;
+        padding-top: 20%;
+    }
+
+    .botones {
+        margin-left: 20px;
+        background-color: $color-offwhite;
+        border-color: $color-amarillo;
+        border-radius: 2px;
+        border-style: solid;
+        color: $color-gris;
+    }
+
+    .pagproyectos__botones {
+        margin-top: 15px;
+        text-align: right;
+        margin-right: 20px;
+    }
+
+ }
+
+ .pagproyectos__textos2 {
+    @extend .pagproyectos__textos1;
+     background-color: $color-mostaza;
+     h2 {
+         color: $color-petroleo;
+     }
+
+     .botones {
+         margin-left: 20px;
+         background-color: $color-mostaza;
+         border-color: $color-amarillo;
+         border-radius: 2px;
+         border-style: solid;
+         color: $color-blanco;
+     }
+
+     .pagproyectos__botones {
+        text-align: left;
+    }
+ }
+
+ .pagproyectos__alignright {
     text-align: right;
     padding-right: 20px;
-}
+ }
 
-.imgProyecto1 {
-    grid-area: img1;
-    background-image: url("../images/ambiente_1.jpg");
-}
-
-.textoProyecto2 {
-    grid-area: tex2;
-    // background-color: #EBC400;
-    color: #ffffff;
-}
-
-.imgProyecto2 {
-    grid-area: img2;
-    background-image: url("../images/ambiente_2.png");
-}
-
-.textoProyecto3 {
-    grid-area: tex3;
-    // background-color: #75B9BE;
-}
-
-.imgProyecto3 {
-    grid-area: img3;
-    background-image: url("../images/ambiente_3.jpg");
-}
-
-.textoProyecto4 {
-    grid-area: tex4;
-    // background-color: #EBDB00;
-    color: #ffffff;
-
-}
-
-.imgProyecto4 {
-    grid-area: img4;
-    background-image: url("../images/ambiente_4.jpeg");
-}
-
-.imgProyecto1,
-.imgProyecto2,
-.imgProyecto3,
-.imgProyecto4 {
-    background-size: cover;
-}
-
-.textoProyecto1,
-.textoProyecto3 {
-    padding-top: 250px;
-    width: 100%;
-    text-align: right;
-    padding-right: 20px;
-}
-
-.textoProyecto2,
-.textoProyecto4 {
-    padding-top: 250px;
-    width: 100%;
+ .pagproyectos__alignleft {
     text-align: left;
     padding-left: 20px;
+ }
+
+
+
+
+
+/* ==========================================
+
+MEDIA QUERY 1200px
+
+============================================== */
+
+
+@media screen and (min-width: 992px) {
+
+
+    .linea1:after {
+        content: '\A';
+        white-space: pre;
+      }
+
+
 }
-
-
-/*  seccion otros proyectos ---------------*/
-
-.gridOtrosProyectos {
-    display: grid;
-    grid-template-areas: "tex tex tex"
-                         "proj1 proj2 proj3";
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 80px 300px;
-    height: 500px;
-    column-gap: 30px;
-    padding-right: 50px;
-    justify-content: center;
-    padding-bottom: 50px;
-}
-
-.tituloOP {
-    grid-area: tex;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bolder;
-}
-
-.otrosProj02 {
-    grid-area: proj1;
-    background-image: url("../images/casa5.jpg");
-    background-size: cover;
-}
-
-.otrosProj03 {
-    grid-area: proj2;
-    background-image: url("../images/casa.jpg");
-    background-size: cover;
-}
-
-.otrosProj04 {
-    grid-area: proj3;
-    background-image: url("../images/ambientes-living-room.jpg");
-    background-size: cover;
-}
-
-.gridOtrosProyectos h3 {
-    text-align: center;
-    padding-top: 35%;
-    color: #ffffff;
-}
-
 
 
 /* ==========================================
@@ -652,6 +603,8 @@ MEDIA QUERY 768px
 @media screen and (max-width: 768px) {
     
 
+    // ----portada----//
+        
     .portada__elementos {
         height: 250px;
         li {
@@ -664,6 +617,7 @@ MEDIA QUERY 768px
 
     }
     
+
 
 }
 
@@ -679,6 +633,14 @@ MEDIA QUERY 576px
 
 @media screen and (max-width: 576px) {
 
+    //---newsletter---//
+    
+    .formulario__newsletter {        
+        text-align: center;
+    }
+    
+    // ----portada----//
+        
     .portada__elementos {
         
         li {
@@ -691,10 +653,79 @@ MEDIA QUERY 576px
 
     }
 
+    // ----carrusel index----//
         
     .carousel-caption {
         top: 15%;
     }
+
+    // ----seccion proyectos index----//
+
+    .proyectos__imgs {
+        padding-bottom: 0px;
+    }
+
+    .proyecto2, 
+    .proyecto3, 
+    .proyecto5, 
+    .proyecto6 {
+        margin-top: 12px;
+    }
+
+    .proyecto6 {
+        margin-bottom: 20px;
+    }
+
+    .clientes__card {
+        .card {
+            margin-bottom: 10px;
+        }
+    }
+
+
+    // ----pagina proyectos----//
+        
+    .pagproyectos__textos1 {
+
+         
+        h2 {
+            color: #5c5b5b;
+            font-weight: bolder;
+            font-size: 3vh;
+            padding-top: 5%;
+        }
+
+    }
+
+    .pagproyectos__alignright,
+    .pagproyectos__alignleft {
+        text-align: center;
+        padding-right: 0px;
+        padding-left: 0px;
+     }
+
+     .pagproyectos__textos1,
+     .pagproyectos__textos2 {
+
+        .pagproyectos__botones {
+            text-align:center;  
+            margin-bottom: 15px;
+        }
+    
+    
+        .botones {
+            background-color: $color-mostaza;
+            border-color: $color-amarillo;
+            border-radius: 3px;
+            border-style: solid;
+            color: $color-blanco;
+            padding: 7px 10px;
+    
+        }
+    
+
+    }
+
 
 }
 

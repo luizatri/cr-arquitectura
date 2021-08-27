@@ -1,4 +1,21 @@
 @charset "UTF-8";
+.imgOverlay {
+  position: relative;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* newsletter--------------------*/
+.formulario__newsletter {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #ebebeb;
+  text-align: right;
+}
+.formulario__newsletter label {
+  font-weight: bolder;
+}
+
 /* footer -----------------------------------*/
 .footer__logo {
   width: 200px;
@@ -100,10 +117,6 @@ INDEX
   padding-top: 8%;
 }
 
-.card-img-overlay {
-  height: 100px;
-}
-
 /* SECCIÓN BIENVENIDOS--------------  */
 .bienvenidos {
   padding-top: 30px;
@@ -129,15 +142,6 @@ INDEX
 
 .bienvenidos__text {
   padding-bottom: 30px;
-}
-.bienvenidos__text a {
-  padding: 9px 20px;
-  background-color: #EBC400;
-  border: none;
-  border-radius: 1px;
-  cursor: pointer;
-  text-decoration: none;
-  color: #252B2B;
 }
 
 /* SECCIÓN QUÉ HACEMOS --------------*/
@@ -408,164 +412,97 @@ PÁGINA PROYECTOS
 
 ============================================== */
 /* imagen header proyectos--------------- */
-.gridProyectos01 {
-  display: grid;
-  grid-template-areas: "img img" "tex1 img1" "img2 tex2" "tex3 img3" "img4 tex4";
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 510px 500px 500px 500px 500px;
-  height: 2550px;
-}
-
-.contenidoImgProj {
-  grid-area: img;
+.portadaproyectos__elementos {
   background-image: url("../images/proyectos_img-destacada.jpg");
-  height: 500px;
-  width: 100%;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 390px;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
 }
-
-.imgOverlay {
-  position: relative;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.textProj {
-  position: relative;
-  top: 50%;
-  text-align: center;
+.portadaproyectos__elementos h1 {
   font-family: "Zen Tokyo Zoo";
   color: #ffffff;
-  margin-left: 150px;
-  font-size: 4rem;
+  font-size: 8vh;
+  list-style: none;
+  text-align: center;
+  padding-top: 200px;
 }
 
-.textoProyecto1 {
-  background-color: #A8CCC9;
+.pagproyectos__textoinicio {
+  text-align: center;
+  margin-top: 30px;
 }
 
-.textoProyecto2 {
-  background-color: #EBC400;
+.pagproyectos__proyectos div {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-.textoProyecto3 {
-  background-color: #587B7F;
+.pagproyectos__textos1, .pagproyectos__textos2 {
+  background-color: #e2e2df;
+}
+.pagproyectos__textos1 h2, .pagproyectos__textos2 h2 {
+  color: #5c5b5b;
+  font-weight: bolder;
+  font-size: 8vh;
+  padding-top: 20%;
+}
+.pagproyectos__textos1 .botones, .pagproyectos__textos2 .botones {
+  margin-left: 20px;
+  background-color: #e2e2df;
+  border-color: #EBC400;
+  border-radius: 2px;
+  border-style: solid;
+  color: #252B2B;
+}
+.pagproyectos__textos1 .pagproyectos__botones, .pagproyectos__textos2 .pagproyectos__botones {
+  margin-top: 15px;
+  text-align: right;
+  margin-right: 20px;
 }
 
-.textoProyecto4 {
+.pagproyectos__textos2 {
   background-color: #E3AD19;
 }
+.pagproyectos__textos2 h2 {
+  color: #3C5053;
+}
+.pagproyectos__textos2 .botones {
+  margin-left: 20px;
+  background-color: #E3AD19;
+  border-color: #EBC400;
+  border-radius: 2px;
+  border-style: solid;
+  color: #ffffff;
+}
+.pagproyectos__textos2 .pagproyectos__botones {
+  text-align: left;
+}
 
-.textoProyecto1 {
-  grid-area: tex1;
-  padding-top: 250px;
-  width: 100%;
+.pagproyectos__alignright {
   text-align: right;
   padding-right: 20px;
 }
 
-.imgProyecto1 {
-  grid-area: img1;
-  background-image: url("../images/ambiente_1.jpg");
-}
-
-.textoProyecto2 {
-  grid-area: tex2;
-  color: #ffffff;
-}
-
-.imgProyecto2 {
-  grid-area: img2;
-  background-image: url("../images/ambiente_2.png");
-}
-
-.textoProyecto3 {
-  grid-area: tex3;
-}
-
-.imgProyecto3 {
-  grid-area: img3;
-  background-image: url("../images/ambiente_3.jpg");
-}
-
-.textoProyecto4 {
-  grid-area: tex4;
-  color: #ffffff;
-}
-
-.imgProyecto4 {
-  grid-area: img4;
-  background-image: url("../images/ambiente_4.jpeg");
-}
-
-.imgProyecto1,
-.imgProyecto2,
-.imgProyecto3,
-.imgProyecto4 {
-  background-size: cover;
-}
-
-.textoProyecto1,
-.textoProyecto3 {
-  padding-top: 250px;
-  width: 100%;
-  text-align: right;
-  padding-right: 20px;
-}
-
-.textoProyecto2,
-.textoProyecto4 {
-  padding-top: 250px;
-  width: 100%;
+.pagproyectos__alignleft {
   text-align: left;
   padding-left: 20px;
 }
 
-/*  seccion otros proyectos ---------------*/
-.gridOtrosProyectos {
-  display: grid;
-  grid-template-areas: "tex tex tex" "proj1 proj2 proj3";
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 80px 300px;
-  height: 500px;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  padding-right: 50px;
-  justify-content: center;
-  padding-bottom: 50px;
-}
+/* ==========================================
 
-.tituloOP {
-  grid-area: tex;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bolder;
-}
+MEDIA QUERY 1200px
 
-.otrosProj02 {
-  grid-area: proj1;
-  background-image: url("../images/casa5.jpg");
-  background-size: cover;
+============================================== */
+@media screen and (min-width: 992px) {
+  .linea1:after {
+    content: "\a";
+    white-space: pre;
+  }
 }
-
-.otrosProj03 {
-  grid-area: proj2;
-  background-image: url("../images/casa.jpg");
-  background-size: cover;
-}
-
-.otrosProj04 {
-  grid-area: proj3;
-  background-image: url("../images/ambientes-living-room.jpg");
-  background-size: cover;
-}
-
-.gridOtrosProyectos h3 {
-  text-align: center;
-  padding-top: 35%;
-  color: #ffffff;
-}
-
 /* ==========================================
 
 MEDIA QUERY 768px
@@ -589,6 +526,10 @@ MEDIA QUERY 576px
 
 ============================================== */
 @media screen and (max-width: 576px) {
+  .formulario__newsletter {
+    text-align: center;
+  }
+
   .portada__elementos li {
     font-size: 4vh;
   }
@@ -599,5 +540,53 @@ MEDIA QUERY 576px
 
   .carousel-caption {
     top: 15%;
+  }
+
+  .proyectos__imgs {
+    padding-bottom: 0px;
+  }
+
+  .proyecto2,
+.proyecto3,
+.proyecto5,
+.proyecto6 {
+    margin-top: 12px;
+  }
+
+  .proyecto6 {
+    margin-bottom: 20px;
+  }
+
+  .clientes__card .card {
+    margin-bottom: 10px;
+  }
+
+  .pagproyectos__textos1 h2, .pagproyectos__textos2 h2 {
+    color: #5c5b5b;
+    font-weight: bolder;
+    font-size: 3vh;
+    padding-top: 5%;
+  }
+
+  .pagproyectos__alignright,
+.pagproyectos__alignleft {
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .pagproyectos__textos1 .pagproyectos__botones,
+.pagproyectos__textos2 .pagproyectos__botones {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .pagproyectos__textos1 .botones,
+.pagproyectos__textos2 .botones {
+    background-color: #E3AD19;
+    border-color: #EBC400;
+    border-radius: 3px;
+    border-style: solid;
+    color: #ffffff;
+    padding: 7px 10px;
   }
 }/*# sourceMappingURL=estilos.css.map */
