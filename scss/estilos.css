@@ -519,6 +519,14 @@ MEDIA QUERY 768px
   .portada__textos {
     padding-top: 7%;
   }
+
+  .nosotros__text ul {
+    font-family: "Zen Tokyo Zoo";
+    list-style: none;
+    font-size: 13vh;
+    text-align: center;
+    padding-right: 50px;
+  }
 }
 /* ==========================================
 
@@ -588,5 +596,16 @@ MEDIA QUERY 576px
     border-style: solid;
     color: #ffffff;
     padding: 7px 10px;
+  }
+
+  .nosotros__text {
+    padding-top: 5%;
+  }
+  .nosotros__text ul {
+    font-family: "Zen Tokyo Zoo";
+    list-style: none;
+    font-size: 8vh;
+    text-align: center;
+    padding-right: 50px;
   }
 }/*# sourceMappingURL=estilos.css.map */

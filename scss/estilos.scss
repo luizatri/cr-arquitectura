@@ -593,6 +593,7 @@ MEDIA QUERY 1200px
 }
 
 
+
 /* ==========================================
 
 MEDIA QUERY 768px
@@ -616,6 +617,23 @@ MEDIA QUERY 768px
         padding-top: 7%;
 
     }
+
+    
+
+    // ----pagina nosotros----//
+
+    
+    .nosotros__text {
+
+        ul {
+            font-family: $font-portada;
+            list-style: none;
+            font-size: 13vh;
+            text-align: center;
+            padding-right: 50px;
+        }
+    }
+
     
 
 
@@ -726,6 +744,20 @@ MEDIA QUERY 576px
 
     }
 
+    // ----pagina nosotros----//
+
+    
+    .nosotros__text {
+        padding-top: 5%;
+
+        ul {
+            font-family: $font-portada;
+            list-style: none;
+            font-size: 8vh;
+            text-align: center;
+            padding-right: 50px;
+        }
+    }
 
 }
 
