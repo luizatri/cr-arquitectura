@@ -97,10 +97,24 @@ INDEX
 
 ============================================== */
 
+/* NAV BAR-------- */
+
+.navbar-brand {
+    padding-left: 2%;
+}
+
+
 
 /* IMG DESTACADA INDEX-------- */
 
  .portada__elementos {
+
+    background-image: url(../images/imgportada.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 390px;
+    width: 100%;
 
     padding-left: 0px;
     padding-right: 0px;
@@ -120,7 +134,7 @@ INDEX
 
 
 .portada__textos {
-    top: 20%;
+    padding-top: 8%;
 }
 
 .card-img-overlay {
@@ -636,18 +650,20 @@ MEDIA QUERY 768px
 
 
 @media screen and (max-width: 768px) {
+    
 
     .portada__elementos {
-    
+        height: 250px;
         li {
-        font-size: 5vh;
+        font-size: 6vh;
         }
     }
 
     .portada__textos {
-        top: 13%;
+        padding-top: 7%;
 
     }
+    
 
 }
 
@@ -664,15 +680,21 @@ MEDIA QUERY 576px
 @media screen and (max-width: 576px) {
 
     .portada__elementos {
-    
+        
         li {
-        font-size: 3vh;
+        font-size: 4vh;
         }
     }
 
     .portada__textos {
-        top: 8%;
+        padding-top: 20%;
 
     }
 
+        
+    .carousel-caption {
+        top: 15%;
+    }
+
 }
+
