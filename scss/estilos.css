@@ -16,6 +16,13 @@
   font-weight: bolder;
 }
 
+/* nav bar--------------------*/
+.active {
+  border-bottom-color: #EBC400;
+  border-radius: 2px;
+  border-bottom-style: solid;
+}
+
 /* footer -----------------------------------*/
 .footer__logo {
   width: 200px;
@@ -204,7 +211,6 @@ INDEX
   padding-top: 10px;
   padding-bottom: 30px;
   background-color: #252B2B;
-  width: 100%;
 }
 .proyectos__imgs h3 {
   color: #ffffff;
@@ -286,9 +292,6 @@ INDEX
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: center;
-  height: 100%;
-  width: 100%;
-  margin-left: 0px;
 }
 .clientes__texto h2 {
   font-weight: bolder;
@@ -297,8 +300,6 @@ INDEX
 .clientes__card {
   background-color: #e2e2df;
   padding-bottom: 20px;
-  width: 100%;
-  margin-left: 0px;
 }
 .clientes__card .card-body {
   background-color: #252B2B;
@@ -370,7 +371,7 @@ PÁGINA NOSOTROS
 
 .info__subtitulo {
   color: #3C5053;
-  font-size: 6vh;
+  font-size: 7vh;
   margin-left: 15px;
   padding-left: 10px;
 }
@@ -493,6 +494,75 @@ PÁGINA PROYECTOS
   padding-left: 20px;
 }
 
+.pagproyectos__textoinicio {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* ==========================================
+
+PÁGINA CLIENTES
+
+============================================== */
+.portadaclientes__elementos {
+  background-image: url("../images/ambiente_3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 390px;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.portadaclientes__elementos h1 {
+  font-family: "Zen Tokyo Zoo";
+  color: #ffffff;
+  font-size: 8vh;
+  list-style: none;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.clientes__boxamarillo,
+.clientes__boxverde {
+  border: 10px;
+}
+.clientes__boxamarillo p,
+.clientes__boxverde p {
+  font-size: 3.5vh;
+  padding-top: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  text-align: justify;
+}
+.clientes__boxamarillo h4,
+.clientes__boxverde h4 {
+  padding-left: 3%;
+  padding-right: 3%;
+  font-weight: bolder;
+  font-size: 2.5vh;
+}
+
+.clientes__boxamarillo {
+  background-color: #EBC400;
+}
+
+.clientes__boxverde {
+  background-color: #587B7F;
+  color: #e2e2df;
+}
+
+.clientes__depoimentos {
+  margin-top: 10px;
+}
+.clientes__depoimentos div, .clientes__depoimentos img {
+  border-radius: 2%;
+}
+
+.clientes__ultimodepoimento {
+  margin-bottom: 30px;
+}
+
 /* ==========================================
 
 MEDIA QUERY 1200px
@@ -535,6 +605,12 @@ MEDIA QUERY 576px
 
 ============================================== */
 @media screen and (max-width: 576px) {
+  .active {
+    border-bottom-color: none;
+    border-radius: 0;
+    border-bottom-style: none;
+  }
+
   .formulario__newsletter {
     text-align: center;
   }
@@ -608,5 +684,25 @@ MEDIA QUERY 576px
     font-size: 8vh;
     text-align: center;
     padding-right: 50px;
+  }
+
+  .info__subtitulo {
+    font-size: 5vh;
+  }
+
+  .info__titulo,
+.info__texto1,
+.info__texto2 {
+    padding-left: 20px;
+  }
+
+  .footer__colcenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer__contacto {
+    text-align: center;
   }
 }/*# sourceMappingURL=estilos.css.map */
