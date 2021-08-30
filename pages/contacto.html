@@ -22,23 +22,24 @@
 </head>
 
 <body>
+
   <header>
 
     <!-- inicio nav bar ------------------------------------------>
 
     <nav class="navbar navbar-expand-lg navbar-light">
 
-      <div class="container">
+      <div class="container-fluid h-auto">
 
         <a class="navbar-brand" href="../index.html"> <img src="../images/logo-cr_bw_B.png" alt=""> </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-ta rget="#navbarNavDropdown"
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav justify-content-end w-100">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../pages/proyectos.html">Proyectos</a>
+              <a class="nav-link" aria-current="page" href="../pages/proyectos.html">Proyectos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
@@ -66,90 +67,107 @@
 
   </header>
 
+
   <main>
 
-    <div class="container-fluid">
+    <div class="container-fluid contacto__main">
 
-      <div class="row">
-        <div class="col-12">
+      <div class="row justify-content-center align-content-center
+      contacto__info">
+        <div class="col-10 col-lg-4 contacto__form order-last order-sm-last  order-md-last  order-lg-first">
+
+          <form>
+
+            <div>
+
+              <h1>Contáctanos</h1>
+              <p>Tenemos un proyecto esperando por vos.</p>
+
+            </div>
+
+
+
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Nombre</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder="Nombre">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
+            </div>
+
+            <fieldset class="form-group">
+              <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Proyecto de interés</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                      checked>
+                    <label class="form-check-label" for="gridRadios1">
+                      Residencial
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                      Comercial
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                    <label class="form-check-label" for="gridRadios3">
+                      Paisajismo
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">
+                    Quiero suscribirme al newsletter
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group row contacto__cajamsj">
+              <label for="exampleFormControlTextarea1">Envía tu consulta</label>
+              <textarea class="form-control " id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+
+            <div class="form-group row" id="contacto__boton">
+              <div class="col-sm-10">
+                <a href="#" class="botones"><span>Enviar</span></a>
+                <!-- <button type="submit" class="btn btn-primary">Sign in</button> -->
+              </div>
+            </div>
+          </form>
+
+
+
+
+        </div>
+
+
+        <div class="col-10 col-lg-4 contacto__img">
           <img src="../images/contacto/contactoimg.png" alt="imagen de contacto" class="img-fluid">
         </div>
+
       </div>
-
-    </div>
-
-    <section class="contacto">
-
-      <h1 class="display1">CONTÁCTANOS</h1>
-
-      <div class="container-fluid">
-
-        <div class="row contact-form">
-
-          <div class="form-field col-lg-6">
-            <input class="input-text" id="name" type="text" name="">
-            <label for="name" class="label">Nombre</label>
-          </div>
-  
-          <div class="form-field col-lg-6">
-            <input class="input-text" id="email" type="email" name="">
-            <label for="email" class="label">E-mail</label>
-          </div>
-  
-          <div class="form-field col-lg-6">
-            <input class="input-number" id="phone" type="number" name="">
-            <label for="phone" class="label">Teléfono</label>
-          </div>
-  
-          <div class="form-field col-lg-6">
-            <input class="input-text" id="message" type="text" name="">
-            <label for="message" class="label">Mensaje</label>
-          </div>
-  
-          <div class="form-field col-lg-6">
-            <input class="submit-btn" value="submit" type="submit" name="">
-          </div>
-
-
-    </section>
-
-      
-
 
 
 
 
   </main>
-
-  <!-- inicio formulario de contacto   -->
-  <!-- <h3>Contacto</h3>
-  <form enctype="application/x-www-form-urlencoded" action="" method="GET">
-    <label>Nombre</label>
-    <input type="text"><br>
-    <label>E-mail</label>
-    <input name="email" type="email"><br>
-    <label>Contraseña</label>
-    <input name="password" type="password"><br>
-    <label>Tel</label>
-    <input name="number" type="number"><br>
-    <div>Ubicación</div>
-    <select name="zona">
-      <option value="ZN">Zona Norte</option>
-      <option value="ZS">Zona Sur</option>
-      <option value="ZE">Zona Este</option>
-      <option value="ZO">Zona Oeste</option>
-    </select>
-    <br>
-    <label>Deja tu mensaje:</label><br>
-    <textarea name="texto" id="" cols="30" rows="10"></textarea><br>
-    <div>Acepto los términos y condiciones</div>
-    <input type="checkbox" name="acepta" value="1"><br>
-    <button type="submit">Enviar</button>
-    <button type="reset">Limpiar</button>
-  </form> -->
-  <!-- fin formulario de contacto  -->
-
-
 
   <!-- inicio footer --------------------------------------------------------------->
   <footer>

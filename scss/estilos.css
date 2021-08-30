@@ -565,6 +565,60 @@ PÁGINA CLIENTES
 
 /* ==========================================
 
+PÁGINA CONTACTO
+
+============================================== */
+.form-check-input:checked {
+  background-color: #E3AD19;
+  border-color: #E3AD19;
+}
+
+.contacto__info {
+  height: auto;
+}
+.contacto__info p {
+  font-weight: bolder;
+}
+
+.contacto__form, .contacto__img {
+  background-color: #ffffff;
+}
+
+.contacto__form {
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+}
+
+#contacto__boton {
+  margin-top: 30px;
+}
+
+.contacto__img {
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contacto__main {
+  background-color: #E3AD19;
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
+.contacto__cajamsj {
+  padding-left: 10px;
+}
+
+#inputEmail3 {
+  margin-top: 5px;
+}
+
+/* ==========================================
+
 MEDIA QUERY 1200px
 
 ============================================== */
@@ -574,6 +628,10 @@ MEDIA QUERY 1200px
     white-space: pre;
   }
 }
+.portada__elementos {
+  height: 590px;
+}
+
 /* ==========================================
 
 MEDIA QUERY 768px
@@ -704,5 +762,25 @@ MEDIA QUERY 576px
 
   .footer__contacto {
     text-align: center;
+  }
+
+  .contacto__form {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .contacto__img {
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-bottom: 10px;
+  }
+
+  #exampleFormControlTextarea1 {
+    width: 95%;
   }
 }/*# sourceMappingURL=estilos.css.map */
