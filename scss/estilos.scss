@@ -174,10 +174,7 @@ INDEX
     background-color: $color-offwhite;
     padding-bottom: 30px;
 }
-.bienvenidos__img {
-    background-image: url("../images/ambiente_4.jpeg");
-    background-size: cover;
-}
+
 
 .bienvenidos__text {
     text-align: left;
@@ -630,7 +627,10 @@ PÁGINA SERVICIOS
      margin-bottom: 5%;
      margin-left: 10%;
      margin-right: 10%;
-     padding-top: 0px;
+
+     p {
+         font-size: 2.5vh;
+     }
 
  }
 
@@ -846,6 +846,15 @@ MEDIA QUERY 768px
     }
 
 
+    // ----pagina servicios----//
+
+    .pagservicios__items {
+       
+        h2 {
+            padding-top: 5%;
+        }
+   
+    }
 
 
 }
@@ -1032,7 +1041,21 @@ MEDIA QUERY 576px
         width: 95%;
     }
 
+    // ----pagina servicios----//
+
+    .pagservicios__items {
+       
+        h2 {
+            padding-top: 5%;
+        }
+   
+    }
+
+
+
 }
+
+
 
 
 

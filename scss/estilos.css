@@ -131,11 +131,6 @@ INDEX
   padding-bottom: 30px;
 }
 
-.bienvenidos__img {
-  background-image: url("../images/ambiente_4.jpeg");
-  background-size: cover;
-}
-
 .bienvenidos__text {
   text-align: left;
 }
@@ -533,7 +528,9 @@ PÁGINA SERVICIOS
   margin-bottom: 5%;
   margin-left: 10%;
   margin-right: 10%;
-  padding-top: 0px;
+}
+.pagservicios__items p {
+  font-size: 2.5vh;
 }
 
 /* ==========================================
@@ -693,6 +690,10 @@ MEDIA QUERY 768px
     text-align: center;
     padding-right: 50px;
   }
+
+  .pagservicios__items h2 {
+    padding-top: 5%;
+  }
 }
 /* ==========================================
 
@@ -823,5 +824,9 @@ MEDIA QUERY 576px
 
   #exampleFormControlTextarea1 {
     width: 95%;
+  }
+
+  .pagservicios__items h2 {
+    padding-top: 5%;
   }
 }/*# sourceMappingURL=estilos.css.map */
