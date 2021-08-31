@@ -22,13 +22,14 @@
 </head>
 
 <body>
+
   <header>
 
     <!-- inicio nav bar ------------------------------------------>
 
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light ">
 
-      <div class="container">
+      <div class="container-fluid h-auto">
 
         <a class="navbar-brand" href="../index.html"> <img src="../images/logo-cr_bw_B.png" alt=""> </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -47,7 +48,7 @@
               <a class="nav-link" href="../pages/clientes.html">Clientes</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Servicios
               </a>
@@ -57,7 +58,7 @@
                 <li><a class="dropdown-item" href="../pages/servicios.html">Jardinería</a></li>
               </ul>
             </li>
-            <a href="../pages/contacto.html"><button type="button" class="btn btn-warning">Contacto</button></a>
+            <a href="../pages/contacto.html" class="botones">Contacto</a>
           </ul>
         </div>
       </div>
@@ -66,147 +67,19 @@
 
   </header>
 
-  <div class="gridServicios">
+  <main>
 
-    <!-- inicio imagen destacada -------------------------------------->
+    <div class="container-fluid">
 
-    <div class="imgServ">
+      <!-- IMG PORTADA------ -->
 
-      <div class="imgOverlay">
+      <div class="row">
 
-        <div class="textServ">
-          <span>SERVICIOS</span>
-        </div>
+        <div class="portadaservicios__elementos col-12">
 
-      </div>
+          <div class="imgOverlay">
 
-    </div>
-
-    <!-- fin imagen destacada ---------------------------------------->
-
-    <!-- inicio texto servicio --------------------------------------->
-    <div class="descripServ">
-
-      <div class="descripTitle">
-        <h1>¿Cómo podemos ayudarte?</h1>
-      </div>
-
-      <div class="descripText">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam explicabo saepe alias quos nihil qui
-          voluptate neque perspiciatis dolore id! Nostrum impedit officiis ut et, similique saepe adipisci dolores
-          aperiam incidunt eum accusantium nobis distinctio hic a eaque tenetur? Ipsam voluptate, ullam quos culpa
-          doloribus repellat sunt, consequatur omnis sequi aperiam illo magni. Quasi vel iure delectus maxime aperiam.
-        </p>
-      </div>
-
-    </div>
-
-    <!-- fin texto servicio ------------------------------------------>
-
-    <!-- inicio bloque otros servicios --------------------------------->
-
-
-    <div class="tituloOS">
-      <h2>Otros Servicios</h2>
-    </div>
-
-    <div class="otrosServ">
-
-      <div class=otrosServ1>
-        <div class="imgOverlay">
-          <h3>Servicio 02</h3>
-        </div>
-      </div>
-
-      <div class=otrosServ2>
-        <div class="imgOverlay">
-          <h3>Servicio 03</h3>
-        </div>
-      </div>
-
-      <div class=otrosServ3>
-        <div class="imgOverlay">
-          <h3>Servicio 04</h3>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- fin bloque otros servicios -------------------------------------->
-
-  </div>
-
-
-  </div>
-
-  <!-- inicio footer --------------------------------------------------------------->
-  <footer>
-
-    <div class="container-fluid footer">
-
-
-      <div class="row justify-content-center">
-
-        <div class="col-12 col-lg-4">
-
-          <div class="row justify-content-start">
-
-            <div class="col-12">
-
-              <img src="../images/logo-cr.png" alt="logo cr" class="footer__logo">
-
-            </div>
-
-          </div>
-
-          <div class="row">
-
-            <div class="col-12">
-
-              <p>Nos dedicamos al desarrollo personalizado e integral de proyectos de arquitectura e interiorismo</p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <div class="footer__links col-12 col-md-4 col-lg-4">
-
-          <ul>
-            <li><a href="../pages/servicios.html">Servicios</a></li>
-            <li><a href="../pages/proyectos.html">Proyectos</a></li>
-            <li><a href="../pages/clientes.html">Clientes</a></li>
-            <li><a href="../pages/nosotros.html">Nosotros</a></li>
-            <li><a href="../pages/contacto.html">Contacto</a></li>
-          </ul>
-
-        </div>
-
-
-        <div class="col-12 col-lg-4 footer__imgs">
-
-          <div class="row justify-content-center">
-
-            <div class="col-12 col-lg-4 align-self-center">
-              <a href="http://www.instagram.com"><img src="../images/instagram_icon.png" alt="instagram"></a>
-              <a href="http://www.facebook.com"><img src="../images/facebook_icon.png" alt="facebook"></a>
-              <a href="http://www.pinterest.com"><img src="../images/pinterest_icon.png" alt="pinterest"></a>
-              <a href="http://www.twitter.com"><img src="../images/twitter_icon.png" alt="twitter"></a>
-            </div>
-
-          </div>
-
-
-          <div class="row justify-content-center">
-
-            <div class="col-12 col-lg-4">
-
-              <h3>contacto@crarquitectura.com.ar</h3>
-              <h3>+54 9 11 6262 6262</h3>
-
-            </div>
+            <h1>SERVICIOS</h1>
 
           </div>
 
@@ -215,18 +88,191 @@
       </div>
 
 
-      <div class="row justify-content-center footer__copyright">
 
-        <div class="col-12">
+      <!-- FIN PORTADA-------->
 
-          <h4 id="copyright">Luiza Trindade © Todos los derechos reservados</h4>
+      <!-- INICIO SERVICIOS---->
+
+      <div class="row pagservicios__items justify-content-center shadow p-3 mb-5 bg-white rounded">
+
+
+        <div class="col-4">
+
+          <img src="../images/servicios/interior-design.jpg" class="img-fluid" alt="">
 
         </div>
 
+        <div class="col-8">
+
+          <h2>
+            Residenciales
+          </h2>
+
+          <p>
+            Empezamos por comprender los comportamientos y deseos del clientepara crear espacios funcionales y
+            estéticamente agradables. La organización del movimiento es un punto de partida, que se puede lograr
+            mediante la manipulación básica del diseño. Esta división del espacio se puede lograr a través de paredes, Pero también a través de muebles e incluso objetos. Al mismo tiempo, el diseño interior debe prestar atención a las condiciones de confort (térmicas, de iluminación o acústicas), y a la ergonomía, que nos ayuda a dimensionar adecuadamente los muebles y objetos. Finalmente, la especificación de revestimientos y materiales constituye la parte más visible y superficial del diseño de interiores, pero no por eso la menos importante. Este toque final compone la 'cara del proyecto', transmitiendo la visión del diseñador, así como los deseos y necesidades de los usuarios.
+          </p>
+
+          <a href="../pages/contacto.html" class="botones">Quiero enviar una consulta</a>
+
+        </div>
+
+
       </div>
 
-  </footer>
-  <!-- fin footer ------------------------------------------------------------------------------>
+      <div class="row pagservicios__items justify-content-center shadow p-3 mb-5 bg-white rounded">
+
+
+        <div class="col-4">
+
+          <img src="../images/servicios/corporate.jpg" class="img-fluid" alt="">
+
+        </div>
+
+        <div class="col-8">
+
+          <h2>Comerciales</h2>
+
+          <p>
+            La construcción, preparación y decoración de un espacio comercial requiere el trabajo de diversos tipos de empresas y profesionales. Se precisa la intervención de expertos en arquitectura comercial y en diseño comercial, dos disciplinas con muchos factores en común, pero también varias diferencias. La arquitectura aplicada a los espacios comerciales se encarga, no solo de construir, diseñar y asignar la distribución a un espacio físico. El diseño comercia es la disciplina que se encarga de la decoración de espacios, una vez finalizado el proceso de arquitectura comercial.
+          </p>
+
+          <a href="../pages/contacto.html" class="botones">Quiero agendar una reunión</a>
+
+        </div>
+
+
+      </div>
+
+      <div class="row pagservicios__items justify-content-center shadow p-3 mb-5 bg-white rounded">
+
+
+        <div class="col-4">
+
+          <img src="../images/servicios/paisajismo.jpg" class="img-fluid" alt="">
+
+        </div>
+
+        <div class="col-8">
+
+          <h2>Paisajismo</h2>
+
+          <p>
+            Los proyectos ambientales requiere conocimientos y técnicas muy específicas que muchas veces van más allá del propio campo de la arquitectura, por lo que el diseño del paisaje aparece como una rama de especialización en la profesión. Por lo tanto, no es raro que los arquitectos trabajen colaborativamente con paisajistas en proyectos residenciales. Es lo que sucede en nuestro grupo. En la arquitectura paisajística residencial, encontramos dos formas principales de resolver jardines, dependiendo del escenario y contexto en el que encaja el proyecto. 
+
+          </p>
+
+          <a href="../pages/contacto.html" class="botones">Quiero cotizar mi proyecto</a>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- inicio footer --------------------------------------------------------------->
+    <footer>
+
+      <div class="container-fluid footer">
+
+
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-lg-4">
+
+            <div class="row justify-content-start">
+
+              <div class="col-12">
+
+                <img src="../images/logo-cr.png" alt="logo cr" class="footer__logo">
+
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-12">
+
+                <p>Nos dedicamos al desarrollo personalizado e integral de proyectos de arquitectura e interiorismo
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="footer__links col-12 col-md-4 col-lg-4">
+
+            <ul>
+              <li><a href="../pages/servicios.html">Servicios</a></li>
+              <li><a href="../pages/proyectos.html">Proyectos</a></li>
+              <li><a href="../pages/clientes.html">Clientes</a></li>
+              <li><a href="../pages/nosotros.html">Nosotros</a></li>
+              <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+
+          </div>
+
+
+          <div class="col-12 col-lg-4 footer__imgs">
+
+            <div class="row justify-content-center">
+
+              <div class="col-12 col-lg-4 align-self-center">
+                <a href="http://www.instagram.com"><img src="../images/instagram_icon.png" alt="instagram"></a>
+                <a href="http://www.facebook.com"><img src="../images/facebook_icon.png" alt="facebook"></a>
+                <a href="http://www.pinterest.com"><img src="../images/pinterest_icon.png" alt="pinterest"></a>
+                <a href="http://www.twitter.com"><img src="../images/twitter_icon.png" alt="twitter"></a>
+              </div>
+
+            </div>
+
+
+            <div class="row justify-content-center">
+
+              <div class="col-12 col-lg-4">
+
+                <h3>contacto@crarquitectura.com.ar</h3>
+                <h3>+54 9 11 6262 6262</h3>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="row justify-content-center footer__copyright">
+
+          <div class="col-12">
+
+            <h4 id="copyright">Luiza Trindade © Todos los derechos reservados</h4>
+
+          </div>
+
+        </div>
+
+    </footer>
+    <!-- fin footer ------------------------------------------------------------------------------>
 
 
 </body>

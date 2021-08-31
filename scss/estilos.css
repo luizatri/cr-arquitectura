@@ -5,6 +5,16 @@
   background: rgba(0, 0, 0, 0.4);
 }
 
+.botones {
+  padding: 9px 20px;
+  background-color: #EBC400;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #252B2B;
+}
+
 /* newsletter--------------------*/
 .formulario__newsletter {
   padding-top: 20px;
@@ -77,16 +87,6 @@
   color: #576464;
   text-align: center;
   font-size: 2vh;
-}
-
-.botones {
-  padding: 9px 20px;
-  background-color: #EBC400;
-  border: none;
-  border-radius: 1px;
-  cursor: pointer;
-  text-decoration: none;
-  color: #252B2B;
 }
 
 /* ==========================================
@@ -501,6 +501,43 @@ PÁGINA PROYECTOS
 
 /* ==========================================
 
+PÁGINA SERVICIOS
+
+============================================== */
+/* imagen header servicios--------------- */
+.portadaservicios__elementos {
+  background-image: url("../images/servicios/serviciosportada.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 390px;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.portadaservicios__elementos h1 {
+  font-family: "Zen Tokyo Zoo";
+  color: #ffffff;
+  font-size: 8vh;
+  list-style: none;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.pagservicios__box {
+  box-shadow: -30px 30px 20px;
+}
+
+.pagservicios__items {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 0px;
+}
+
+/* ==========================================
+
 PÁGINA CLIENTES
 
 ============================================== */
@@ -752,6 +789,10 @@ MEDIA QUERY 576px
 .info__texto1,
 .info__texto2 {
     padding-left: 20px;
+  }
+
+  .footer p {
+    text-align: center;
   }
 
   .footer__colcenter {
