@@ -279,6 +279,10 @@ INDEX
         text-align: center;
         padding-top: 30%;
     }
+
+    a {
+        text-decoration: none;
+    }
 }
 
 @each $proyecto in proyecto1, proyecto2, proyecto3, proyecto4, proyecto5, proyecto6 {
@@ -910,6 +914,8 @@ MEDIA QUERY 576px
 
     .proyectos__imgs {
         padding-bottom: 0px;
+
+
     }
 
     .proyecto2,

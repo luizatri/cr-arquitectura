@@ -212,6 +212,9 @@ INDEX
   text-align: center;
   padding-top: 30%;
 }
+.proyectos__imgs a {
+  text-decoration: none;
+}
 
 .proyecto1 {
   background-image: url("../images/projetos/proyecto1.jpg");
