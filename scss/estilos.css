@@ -745,6 +745,15 @@ MEDIA QUERY 576px
     margin-bottom: 10px;
   }
 
+  .proyecto1:hover,
+.proyecto2:hover,
+.proyecto3:hover,
+.proyecto4:hover,
+.proyecto5:hover,
+.proyecto6:hover {
+    transform: scale(0);
+  }
+
   .pagproyectos__textos1 h2, .pagproyectos__textos2 h2 {
     color: #5c5b5b;
     font-weight: bolder;
@@ -831,5 +840,19 @@ MEDIA QUERY 576px
 
   .pagservicios__items h2 {
     padding-top: 5%;
+  }
+
+  .clientes__boxamarillo,
+.clientes__boxverde {
+    margin-top: 7px;
+    margin-bottom: 10px;
+  }
+  .clientes__boxamarillo p,
+.clientes__boxverde p {
+    font-size: 2.5vh;
+  }
+  .clientes__boxamarillo h4,
+.clientes__boxverde h4 {
+    font-size: 2.5vh;
   }
 }/*# sourceMappingURL=estilos.css.map */

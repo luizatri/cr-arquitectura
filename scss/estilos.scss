@@ -935,6 +935,15 @@ MEDIA QUERY 576px
         }
     }
 
+    .proyecto1:hover,
+    .proyecto2:hover,
+    .proyecto3:hover,
+    .proyecto4:hover,
+    .proyecto5:hover,
+    .proyecto6:hover {
+        transform: scale(0);
+    }
+
 
     // ----pagina proyectos----//
 
@@ -1057,9 +1066,30 @@ MEDIA QUERY 576px
    
     }
 
+    // ----pagina clientes----//
+
+    
+
+.clientes__boxamarillo,
+.clientes__boxverde {
+
+    margin-top: 7px;
+    margin-bottom: 10px;
+
+
+    p {
+        font-size: 2.5vh;
+       
+    }
+
+    h4 {      
+       font-size: 2.5vh;
+    }
+}
 
 
 }
+
 
 
 
