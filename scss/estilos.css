@@ -726,6 +726,10 @@ MEDIA QUERY 576px
     top: 15%;
   }
 
+  .hacemos__carrusel {
+    width: 100%;
+  }
+
   .proyectos__imgs {
     padding-bottom: 0px;
   }
@@ -745,13 +749,37 @@ MEDIA QUERY 576px
     margin-bottom: 10px;
   }
 
+  .proyecto1 {
+    transition: none;
+  }
+
+  .proyecto2 {
+    transition: none;
+  }
+
+  .proyecto3 {
+    transition: none;
+  }
+
+  .proyecto4 {
+    transition: none;
+  }
+
+  .proyecto5 {
+    transition: none;
+  }
+
+  .proyecto6 {
+    transition: none;
+  }
+
   .proyecto1:hover,
 .proyecto2:hover,
 .proyecto3:hover,
 .proyecto4:hover,
 .proyecto5:hover,
 .proyecto6:hover {
-    transform: scale(0);
+    transform: none;
   }
 
   .pagproyectos__textos1 h2, .pagproyectos__textos2 h2 {

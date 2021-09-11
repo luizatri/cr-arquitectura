@@ -285,6 +285,7 @@ INDEX
     }
 }
 
+
 @each $proyecto in proyecto1, proyecto2, proyecto3, proyecto4, proyecto5, proyecto6 {
     .#{$proyecto} {
       background-image: url('../images/projetos/#{$proyecto}.jpg');
@@ -910,6 +911,12 @@ MEDIA QUERY 576px
         top: 15%;
     }
 
+        
+    .hacemos__carrusel {
+        width: 100%;
+    
+    }
+
     // ----seccion proyectos index----//
 
     .proyectos__imgs {
@@ -935,13 +942,21 @@ MEDIA QUERY 576px
         }
     }
 
+
+    @each $proyecto in proyecto1, proyecto2, proyecto3, proyecto4, proyecto5, proyecto6 {
+        .#{$proyecto} {
+          transition: none;
+        }
+    } 
+
+    
     .proyecto1:hover,
     .proyecto2:hover,
     .proyecto3:hover,
     .proyecto4:hover,
     .proyecto5:hover,
     .proyecto6:hover {
-        transform: scale(0);
+        transform: none;
     }
 
 
