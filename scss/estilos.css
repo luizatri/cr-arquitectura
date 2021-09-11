@@ -467,6 +467,9 @@ PÁGINA PROYECTOS
   border-style: solid;
   color: #252B2B;
 }
+.pagproyectos__textos1 .botones:hover, .pagproyectos__textos2 .botones:hover {
+  background-color: #EBC400;
+}
 .pagproyectos__textos1 .pagproyectos__botones, .pagproyectos__textos2 .pagproyectos__botones {
   margin-top: 15px;
   text-align: right;
@@ -504,6 +507,20 @@ PÁGINA PROYECTOS
 .pagproyectos__textoinicio {
   text-align: center;
   margin-top: 30px;
+}
+
+.pagproyectos__imgs {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.pagproyectos__containerimg:hover .pagproyectos__imgs {
+  transform: scale(1.1);
+}
+
+.pagproyectos__containerimg {
+  overflow: hidden;
 }
 
 /* ==========================================
