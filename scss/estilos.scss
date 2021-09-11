@@ -290,23 +290,33 @@ INDEX
     .#{$proyecto} {
       background-image: url('../images/projetos/#{$proyecto}.jpg');
       background-size: cover;
-      width: 300px;
-      height: 200px;
-      transition: all 0.5s;
+      width: 100%;
+      height: 100%;
       padding: 0px;
+      transition:all .5s ease-in-out;
     }
 }
 
 
-
-.proyecto1:hover,
-.proyecto2:hover,
-.proyecto3:hover,
-.proyecto4:hover,
-.proyecto5:hover,
-.proyecto6:hover {
-    transform: scale(1.1);
+.proyectos__container {
+    width: 300px;
+    height: 200px;
 }
+
+.proyectos__container:hover .proyecto1,
+.proyectos__container:hover .proyecto2,
+.proyectos__container:hover .proyecto3,
+.proyectos__container:hover .proyecto4,
+.proyectos__container:hover .proyecto5,
+.proyectos__container:hover .proyecto6 {
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
+
+.proyectos__container {
+    overflow:hidden;
+}
+
 
 
 /* SECCIÓN CLIENTES---------------*/
