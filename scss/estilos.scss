@@ -1,7 +1,16 @@
 @import 'colores';
 @import 'tipografias';
 
-//ESTILOS
+// GLOBALES
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
 
 .imgOverlay {
     position: relative;
@@ -17,6 +26,11 @@
     cursor: pointer;
     text-decoration: none;
     color: $color-gris;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    color:#3F3E3B
 }
 
 
