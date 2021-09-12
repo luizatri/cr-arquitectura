@@ -400,7 +400,7 @@ MEDIA QUERY 768px
     height: 250px;
   }
   .portada__elementos li {
-    font-size: 6vh;
+    font-size: 3vh;
   }
 
   .portada__textos {
