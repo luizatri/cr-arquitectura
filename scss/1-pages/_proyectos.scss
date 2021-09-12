@@ -134,6 +134,43 @@ PÁGINA PROYECTOS
     overflow: hidden;
 }
 
+// modales
+
+.modal-content {
+    background-color: $color-offwhite;
+    margin-top: 40%;
+}
+
+.modal-header {
+
+    .botones {
+        border-color: none;
+        background-color: $color-offwhite; 
+        margin-right: 5px;
+        border-style: none;
+        padding: 4px 9px;
+    }
+}
+
+.modal-footer {
+
+    .botones {
+        padding: 5px 15px;
+        background-color: $color-mostaza;
+        margin-right: 10px;
+    }
+}
+
+.modal-title, 
+.modal-body {
+    margin-left: 20px;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
 /* ==========================================
 
 MEDIA QUERY 576px
