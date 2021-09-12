@@ -1,0 +1,388 @@
+
+/* ==========================================
+
+INDEX
+
+============================================== */
+
+
+/* IMG DESTACADA INDEX-------- */
+
+.portada__elementos {
+
+    background-image: url(../images/imgportada.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 390px;
+    width: 100%;
+
+    padding-left: 0px;
+    padding-right: 0px;
+
+        li {
+        font-family: $font-portada;
+        color: $color-gris;
+        font-size: 8vh;
+        list-style: none;
+        }
+
+        ul {
+            padding-left: 2%;
+        }
+
+ }
+
+
+.portada__textos {
+    padding-top: 8%;
+}
+
+
+/* SECCIÓN BIENVENIDOS--------------  */
+
+.bienvenidos {
+    padding-top: 30px;
+    background-color: $color-offwhite;
+    padding-bottom: 30px;
+}
+
+
+.bienvenidos__text {
+    text-align: left;
+    p {
+        font-size: 2vh;
+    }
+
+    h1 {
+        font-size: 3vh;
+        font-weight: bolder;
+    }
+
+}
+
+.bienvenidos__text {
+
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+/* SECCIÓN QUÉ HACEMOS --------------*/
+
+
+
+.hacemos__text{
+    text-align: center;
+    background-color: $color-mostaza;
+    padding: 20px;
+
+}
+
+.hacemos__carrusel {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    background-color: $color-mostaza;
+}
+
+#hacemos {
+    background-color: $color-mostaza;
+    padding-bottom: 30px;
+
+}
+
+
+.dark:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#000000;
+    opacity:0.4;
+}
+
+.carousel-caption {
+    top: 50%;
+    opacity: 100;
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+
+/* SECCIÓN PROYECTOS------------------------ */
+
+
+.proyectos__index {
+    background-color: $color-gris;
+}
+
+.proyectos__texto {
+    background-color: $color-gris;
+    color: $color-blanco;
+    text-align: center;
+    height: 100%;
+    padding-top: 20px;
+    width: 100%;
+
+    p {
+        margin-bottom: 0px;
+        padding-bottom: 1rem;
+    }
+}
+
+
+.proyectos__imgs {
+
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: $color-gris;
+
+    h3 {
+        color: $color-blanco;
+        text-align: center;
+        padding-top: 30%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+
+@each $proyecto in proyecto1, proyecto2, proyecto3, proyecto4, proyecto5, proyecto6 {
+    .#{$proyecto} {
+      background-image: url('../images/projetos/#{$proyecto}.jpg');
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      padding: 0px;
+      transition:all .5s ease-in-out;
+    }
+}
+
+
+.proyectos__container {
+    width: 300px;
+    height: 200px;
+}
+
+.proyectos__container:hover .proyecto1,
+.proyectos__container:hover .proyecto2,
+.proyectos__container:hover .proyecto3,
+.proyectos__container:hover .proyecto4,
+.proyectos__container:hover .proyecto5,
+.proyectos__container:hover .proyecto6 {
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
+
+.proyectos__container {
+    overflow:hidden;
+}
+
+
+
+/* SECCIÓN CLIENTES---------------*/
+
+.clientes__index {
+    background-color: $color-offwhite;
+}
+
+.clientes__texto {
+    background-color: $color-offwhite;
+    color: $color-gris;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+
+    h2 {
+        font-weight: bolder;
+    }
+}
+
+.clientes__card {
+    background-color: $color-offwhite;
+    padding-bottom: 20px;
+
+
+    .card-body {
+        background-color: $color-gris;
+        color: $color-blanco;
+    }
+
+
+    .card {
+        background-color: $color-offwhite;
+        border: 0px;
+    }
+
+    .btn {
+        background-color: $color-mostaza;
+        border: 0;
+    }
+}
+
+
+.clientes__grid {
+
+    button {
+        margin-bottom: 20px;
+        padding: 9px 12px;
+        background-color: $color-gris;
+        border: none;
+        border-radius: 1px;
+        cursor: pointer;
+        color: $color-blanco;
+        align-self: center;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* ==========================================
+
+MEDIA QUERY 1200px
+
+============================================== */
+
+
+@media screen and (min-width: 992px) {
+
+
+    .linea1:after {
+        content: '\A';
+        white-space: pre;
+      }
+
+
+}
+
+.portada__elementos {
+    height: 590px;
+}
+
+
+
+/* ==========================================
+
+MEDIA QUERY 768px
+
+============================================== */
+
+
+@media screen and (max-width: 768px) {
+
+
+    // ----portada----//
+
+    .portada__elementos {
+        height: 250px;
+        li {
+        font-size: 6vh;
+        }
+    }
+
+    .portada__textos {
+        padding-top: 7%;
+
+    }
+
+}
+
+/* ==========================================
+
+MEDIA QUERY 576px
+
+============================================== */
+
+
+@media screen and (max-width: 576px) {
+
+    
+    // ----portada----//
+
+    .portada__elementos {
+
+        li {
+        font-size: 4vh;
+        }
+    }
+
+    .portada__textos {
+        padding-top: 20%;
+
+    }
+
+    
+
+    // ----carrusel index----//
+
+    .carousel-caption {
+        top: 15%;
+    }
+
+        
+    .hacemos__carrusel {
+        width: 100%;
+    
+    }
+
+    // ----seccion proyectos index----//
+
+    .proyectos__imgs {
+        padding-bottom: 0px;
+
+
+    }
+
+    .proyecto2,
+    .proyecto3,
+    .proyecto5,
+    .proyecto6 {
+        margin-top: 12px;
+    }
+
+    .proyecto6 {
+        margin-bottom: 20px;
+    }
+
+    .clientes__card {
+        .card {
+            margin-bottom: 10px;
+        }
+    }
+
+
+    @each $proyecto in proyecto1, proyecto2, proyecto3, proyecto4, proyecto5, proyecto6 {
+        .#{$proyecto} {
+          transition: none;
+        }
+    } 
+
+    
+    .proyecto1:hover,
+    .proyecto2:hover,
+    .proyecto3:hover,
+    .proyecto4:hover,
+    .proyecto5:hover,
+    .proyecto6:hover {
+        transform: none;
+    }
+
+
+}

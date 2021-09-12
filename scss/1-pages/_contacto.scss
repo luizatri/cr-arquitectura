@@ -1,0 +1,132 @@
+
+
+/* ==========================================
+
+PÁGINA CONTACTO
+
+============================================== */
+
+.form-check-input:checked {
+    background-color:$color-mostaza;
+    border-color: $color-mostaza;
+
+}
+
+.contacto__info {
+
+    height: auto;
+    
+    // height: 90vh;
+
+    p {
+        font-weight: bolder;
+    }
+}
+
+.contacto__form, .contacto__img {
+    background-color:$color-blanco;
+}
+
+.contacto__form {
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+
+}
+
+#contacto__boton {
+    margin-top: 30px;
+}
+
+.contacto__img {
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contacto__main {
+    background-color: $color-mostaza;
+    padding-top: 8%;
+    padding-bottom: 8%;
+
+}
+
+.contacto__cajamsj {
+    padding-left:10px;
+}
+
+#inputEmail3 {
+    margin-top: 5px;
+}
+
+/* ==========================================
+
+MEDIA QUERY 576px
+
+============================================== */
+
+
+@media screen and (max-width: 576px) {
+
+    
+
+
+    // ----pagina contacto----//
+
+    .contacto__form {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 5%;
+        border-bottom-right-radius: 5%;
+        padding-left: 10px;
+        padding-right: 10px;    
+    }
+    
+
+    
+    .contacto__img {
+        border-top-right-radius: 5%;
+        border-top-left-radius: 5%;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        padding-bottom: 10px;
+    }
+
+    #exampleFormControlTextarea1 {
+        width: 95%;
+    }
+
+    // ----pagina servicios----//
+
+    .pagservicios__items {
+       
+        h2 {
+            padding-top: 5%;
+        }
+   
+    }
+
+    // ----pagina clientes----//
+
+    
+
+.clientes__boxamarillo,
+.clientes__boxverde {
+
+    margin-top: 7px;
+    margin-bottom: 10px;
+
+
+    p {
+        font-size: 2.5vh;
+       
+    }
+
+    h4 {      
+       font-size: 2.5vh;
+    }
+}
+
+}

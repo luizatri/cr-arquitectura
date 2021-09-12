@@ -1,0 +1,191 @@
+
+
+/* ==========================================
+
+PÁGINA PROYECTOS
+
+============================================== */
+
+
+
+/* imagen header proyectos--------------- */
+
+
+
+.portadaproyectos__elementos {
+
+    background-image: url("../images/proyectos_img-destacada.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 390px;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+
+        h1 {
+        font-family: $font-portada;
+        color: $color-blanco;
+        font-size: 7vh;
+        list-style: none;
+        text-align: center;
+        padding-top: 200px;
+        }
+
+
+ }
+
+ .pagproyectos__textoinicio {
+     text-align: center;
+     margin-top: 30px;
+
+ }
+
+ .pagproyectos__proyectos {
+     div {
+        padding-left: 0px;
+        padding-right: 0px;
+     }
+ }
+
+ .pagproyectos__textos1 {
+
+    background-color: $color-offwhite;
+
+    h2 {
+        color: #5c5b5b;
+        font-weight: bolder;
+        font-size: 8vh;
+        padding-top: 20%;
+    }
+
+    .botones {
+        margin-left: 20px;
+        background-color: $color-offwhite;
+        border-color: $color-amarillo;
+        border-radius: 2px;
+        border-style: solid;
+        color: $color-gris;
+    }
+
+    .botones:hover {
+        background-color: $color-amarillo;
+    }
+
+    .pagproyectos__botones {
+        margin-top: 15px;
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    
+
+ }
+
+ .pagproyectos__textos2 {
+    @extend .pagproyectos__textos1;
+     background-color: $color-mostaza;
+     h2 {
+         color: $color-petroleo;
+     }
+
+     .botones {
+         margin-left: 20px;
+         background-color: $color-mostaza;
+         border-color: $color-amarillo;
+         border-radius: 2px;
+         border-style: solid;
+         color: $color-blanco;
+     }
+
+     .pagproyectos__botones {
+        text-align: left;
+    }
+ }
+
+ .pagproyectos__alignright {
+    text-align: right;
+    padding-right: 20px;
+ }
+
+ .pagproyectos__alignleft {
+    text-align: left;
+    padding-left: 20px;
+ }
+
+ .pagproyectos__textoinicio {
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.pagproyectos__imgs {
+    width: 100%;
+    height: 100%;
+    transition:all .5s ease-in-out;
+}
+
+.pagproyectos__containerimg:hover .pagproyectos__imgs {    
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+
+.pagproyectos__containerimg {
+    overflow: hidden;
+}
+
+/* ==========================================
+
+MEDIA QUERY 576px
+
+============================================== */
+
+
+@media screen and (max-width: 576px) {
+
+    
+    
+    // ----pagina proyectos----//
+
+    .pagproyectos__textos1 {
+
+
+        h2 {
+            color: #5c5b5b;
+            font-weight: bolder;
+            font-size: 3vh;
+            padding-top: 5%;
+        }
+
+    }
+
+    .pagproyectos__alignright,
+    .pagproyectos__alignleft {
+        text-align: center;
+        padding-right: 0px;
+        padding-left: 0px;
+     }
+
+     .pagproyectos__textos1,
+     .pagproyectos__textos2 {
+
+        .pagproyectos__botones {
+            text-align:center;
+            margin-bottom: 15px;
+        }
+
+
+        .botones {
+            background-color: $color-mostaza;
+            border-color: $color-amarillo;
+            border-radius: 3px;
+            border-style: solid;
+            color: $color-blanco;
+            padding: 7px 10px;
+
+        }
+
+
+    }
+
+}

@@ -1,0 +1,170 @@
+
+
+/* ==========================================
+
+PÁGINA NOSOTROS
+
+============================================== */
+
+$ancho: 50%;
+$height: 500px;
+
+
+.nosotros__portada {
+    border-bottom: 50px;
+}
+.nosotros__img {
+    img {
+        width: $ancho*2;
+    }
+}
+
+.nosotros__text {
+    padding-top: 5%;
+
+    p {
+        font-size: 2vh;
+    }
+
+    ul {
+        font-family: $font-portada;
+        list-style: none;
+        font-size: 13vh;
+        text-align: right;
+        padding-right: 50px;
+    }
+}
+
+.info {
+    padding-top: 30px;
+}
+
+.info__titulo {
+    color: $color-turquesaoscuro;
+    font-weight: bolder;
+    padding-left: 70px;
+    font-size: 8vh;
+
+}
+
+.info__barra {
+    background-color: $color-mostaza;
+    width: 5px;
+    margin-left: 20px;
+}
+
+@mixin sizes($margin, $padding) {
+    margin-left: $margin;
+    padding-left: $padding;
+ }
+
+.info__subtitulo {
+    color: $color-petroleo;
+    font-size: 7vh;
+    @include sizes(15px, 10px);
+}
+
+.info__texto1 {
+    padding-left: 70px;
+    padding-top: 20px;
+    font-size: 3vh;
+}
+
+.info__texto2 {
+    @extend .info__texto1;
+    font-weight: bolder;
+}
+
+.quote {
+    background-color: $color-mostaza;
+    height: $height/2;
+    margin-top: 100px;
+}
+
+.quote__frase {
+
+    span {
+       font-size: 4vh;
+       color: white;
+    }
+
+    text-align: center;
+}
+
+
+.quote__author {
+
+    text-align: center;
+
+    span {
+       font-size: 2vh;
+       color: white;
+    }
+}
+
+
+
+/* ==========================================
+
+MEDIA QUERY 768px
+
+============================================== */
+
+
+@media screen and (max-width: 768px) {
+    
+    // ----pagina nosotros----//
+
+    .nosotros__text {
+
+        ul {
+            font-family: $font-portada;
+            list-style: none;
+            font-size: 13vh;
+            text-align: center;
+            padding-right: 50px;
+        }
+    }
+}
+
+
+
+/* ==========================================
+
+MEDIA QUERY 576px
+
+============================================== */
+
+
+@media screen and (max-width: 576px) {
+
+    
+    // ----pagina nosotros----//
+
+
+    .nosotros__text {
+        padding-top: 5%;
+
+        ul {
+            font-family: $font-portada;
+            list-style: none;
+            font-size: 8vh;
+            text-align: center;
+            padding-right: 50px;
+        }
+    }
+
+
+    .info__subtitulo {
+        font-size: 5vh;
+    }
+
+    .info__titulo, 
+    .info__texto1,
+    .info__texto2  {
+       padding-left: 20px;
+    }
+
+
+
+}

@@ -1,0 +1,77 @@
+
+
+/* ==========================================
+
+PÁGINA CLIENTES
+
+============================================== */
+
+.portadaclientes__elementos {
+
+    background-image: url("../images/ambiente_3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 390px;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+
+        h1 {
+        font-family: $font-portada;
+        color: $color-blanco;
+        font-size: 8vh;
+        list-style: none;
+        text-align: center;
+        padding-top: 200px;
+        }
+
+
+ }
+
+
+ .clientes__boxamarillo,
+ .clientes__boxverde {
+
+     border: 10px;
+     ;
+
+     p {
+         font-size: 3.5vh;
+         padding-top: 5%;
+         padding-left: 3%;
+         padding-right: 3%;
+         text-align: justify;
+
+     }
+
+     h4 {
+        padding-left: 3%;
+        padding-right: 3%;
+        font-weight: bolder;
+        font-size: 2.5vh;
+     }
+}
+
+.clientes__boxamarillo {
+    background-color: $color-amarillo;
+}
+
+.clientes__boxverde {
+    background-color: $color-turquesaoscuro;
+    color: $color-offwhite;
+
+}
+
+.clientes__depoimentos {
+    margin-top: 10px;
+
+    div, img {
+        border-radius: 2%;
+    }
+}
+
+.clientes__ultimodepoimento {
+    margin-bottom: 30px;
+}
+

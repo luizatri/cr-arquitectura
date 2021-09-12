@@ -1,0 +1,33 @@
+
+// NAVBAR
+
+.active {
+    border-bottom-color: $color-amarillo;
+    border-radius: 2px;
+    border-bottom-style: solid;
+}
+
+.navbar-brand {
+    padding-left: 2%;
+}
+
+
+/* ==========================================
+
+MEDIA QUERY 576px
+
+============================================== */
+
+
+@media screen and (max-width: 576px) {
+
+    //---navbar---//
+
+    .active {
+        border-bottom-color: none;
+        border-radius: 0;
+        border-bottom-style: none;
+    }
+
+}
+
